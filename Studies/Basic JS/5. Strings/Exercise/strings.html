@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messing with strings</title>
+</head>
+<body>
+    <script>
+    const name = prompt('Enter your full name:');
+    document.body.innerHTML = `Your name is: ${name} <br />`;
+    document.body.innerHTML += `Your name has ${name.length} letters <br />`;
+    document.body.innerHTML += `The second letter of your name is: ${name[1]} <br />`;
+    document.body.innerHTML += `The first index of the letter 'a' in your name is: ${name.indexOf("a")} <br />`;
+    document.body.innerHTML += `The last index of the letter 'a' in your name is: ${name.lastIndexOf("a")} <br />`;
+    document.body.innerHTML += `The 3 last words of your name are:  ${name.slice(-3)} <br />`;
+    document.body.innerHTML += `The letters of your name are: ${name.split(' ')} <br />`;
+    document.body.innerHTML += `Your name in upper case is: ${name.toUpperCase()} <br />`;
+    document.body.innerHTML += `Your name in lower case is: ${name.toLowerCase()} <br />`;
+    </script>
+</body>
+</html>
